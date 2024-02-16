@@ -1,0 +1,11 @@
+<ActionBar>
+    <Label text="calificaciones"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+
+<StackLayout backgroundColor="#DAF7A6">
+    <Label text='calificaciones' class="texto_centrado"></Label>
+    <Image src="~/app/images/logoR.jpg"></Image>
+    <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+</StackLayout>

@@ -1,0 +1,26 @@
+<ActionBar>
+    <Label text="Editar perfil"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+<StackLayout padding="20%" id="distri">
+    <Image src="~/app/images/profile.jpg" height="300px" border-radius="20%"></Image>
+    <Label text="Nombre user" class="texto_centrado"></Label>
+    <StackLayout>
+        <Label text="Nombre completo: "></Label>
+        <TextField class="input" ></TextField>
+    </StackLayout>
+    <StackLayout>
+        <Label text="Correo: "></Label>
+        <TextField ></TextField>
+    </StackLayout>
+    <StackLayout>
+        <Label text="Telefono: "></Label>
+        <TextField></TextField>
+    </StackLayout>
+    <StackLayout >
+        <Label text="Direccion: "></Label>
+        <TextField></TextField>
+    </StackLayout>
+    <label height="50px"></label>
+    <Button text="Guardar cambios"></Button>
+</StackLayout>
