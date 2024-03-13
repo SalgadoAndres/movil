@@ -1,0 +1,26 @@
+ol.btn {
+    height: 50;
+    font-size: 20;
+    color: #fff; 
+    background-color: #ffffff;
+  }
+  stack-layout {
+    position: absolute;
+    bottom: 0;
+  }
+  
+#card{
+    border-color: black;
+    border-radius: 5;
+    border-width: 2;
+}
+
+.negrita{
+  font-weight: bold;
+  font-size: 25px;  
+}
+
+
+.estrella{
+  background-color: yellow;
+}

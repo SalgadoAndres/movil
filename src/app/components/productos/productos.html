@@ -1,0 +1,75 @@
+<ActionBar backgroundColor="black">
+  <Label style="color: white" text="Productos" ></Label>
+  <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" background="white" />
+</ActionBar>
+<ScrollView>
+  <StackLayout backgroundColor="#f4f4f4">
+    <label class="negrita" text="Productos" id="tit2" height="60" horizontalAlignment="center"></label>
+    <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15 m-t-20">
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image src="~/app/images/product.png"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"   backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image  src="~/app/images/nitro_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image src="~/app/images/carburador_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image src="~/app/images/frenos_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image src="~/app/images/product.png"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" width="550px">
+        <Image src="~/app/images/product.png"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+    </FlexboxLayout>
+    <GridLayout rows=" *, auto" height="100%" class="nose">
+
+      <page-router-outlet row="0"></page-router-outlet>
+
+      <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+        <Button class="fas" text="&#xf015;"></Button>
+        <Button class="fas" text="&#xf002;"></Button>
+        <Button class="fas" text="&#xf007;"></Button>
+      </StackLayout>
+
+
+    </GridLayout>
+    <GridLayout rows=" *, auto" height="100%" class="nose">
+      <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+        <label class="far estrella" text="&#xf005;"></label>
+        <label class="far estrella" text="&#xf005;"></label>
+        <label class="far estrella" text="&#xf005;"></label>
+        <label class="far estrella" text="&#xf005;"></label>
+        <label class="far estrella" text="&#xf005;"></label>
+      </StackLayout>
+    </GridLayout>
+
+  </StackLayout>
+</ScrollView>
